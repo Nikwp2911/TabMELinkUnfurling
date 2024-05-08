@@ -1,5 +1,6 @@
-# TabMELinkUnfurling
+# Tab with Messaging extension-Link unfurling
 Integrated ME Capability with existing Tab app
+
 **Step 1**: Teams toolkit Create a New app with Tab capability(Basic tab)
 ![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/f0be67b4-921a-4edd-b24b-6d0aea70ad41)
 ![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/7031f682-f31f-44a1-8e10-36880bce270c)
