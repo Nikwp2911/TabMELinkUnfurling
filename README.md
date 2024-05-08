@@ -1,4 +1,4 @@
-# Tab with Messaging extension-Link unfurling
+# MS Teams Tab with Messaging extension-Link unfurling
 Integrated ME Capability with existing Tab app
 
 **Step 1**: Teams toolkit Create a New app with Tab capability(Basic tab)
