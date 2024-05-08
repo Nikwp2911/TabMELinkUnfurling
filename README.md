@@ -1,67 +1,20 @@
-# Overview of the Basic Tab template
+# MS Teams Tab with Messaging extension-Link unfurling
+Integrated ME Capability with existing Tab app
 
-This template showcases how Microsoft Teams supports the ability to run web-based UI inside "custom tabs" that users can install either for just themselves (personal tabs) or within a team or group chat context.
+**Step 1**: Teams toolkit Create a New app with Tab capability(Basic tab)
+![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/f0be67b4-921a-4edd-b24b-6d0aea70ad41)
+![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/7031f682-f31f-44a1-8e10-36880bce270c)
 
-## Get started with the Basic Tab template
+Step 2: Move all the component files / static files / config files to tab(create folder) folder
+![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/35bc9338-3300-4c23-ae78-eafd89fc1b7c)
+ Step 3: Create a new ME - Link unfurling app using Teams toolkit, and move all component/static/config files to existing Tab app (Step 1) bot(create folder) folder
+ ![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/d4553cde-4a1f-4294-9756-a3beadb2bd50)
+ ![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/c102ac08-307a-4202-b91f-f14460340d14)
 
-> **Prerequisites**
->
-> To run the basic tab template in your local dev machine, you will need:
->
-> - [Node.js](https://nodejs.org/), supported versions: 16, 18
-> - A [Microsoft 365 account for development](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts)
-> - [Set up your dev environment for extending Teams apps across Microsoft 365](https://aka.ms/teamsfx-m365-apps-prerequisites)
-> Please note that after you enrolled your developer tenant in Office 365 Target Release, it may take couple days for the enrollment to take effect.
-> - [Teams Toolkit Visual Studio Code Extension](https://aka.ms/teams-toolkit) version 5.0.0 and higher or [Teams Toolkit CLI](https://aka.ms/teams-toolkit-cli)
+![image](https://github.com/Nikwp2911/TabMELinkUnfurling/assets/120272329/8a190aa1-ccad-4c9c-9074-f12c8ad87cf4)
 
-1. First, select the Teams Toolkit icon on the left in the VS Code toolbar.
-2. In the Account section, sign in with your [Microsoft 365 account](https://docs.microsoft.com/microsoftteams/platform/toolkit/accounts) if you haven't already.
-3. Press F5 to start debugging which launches your app in Teams using a web browser. Select `Debug in Teams (Edge)` or `Debug in Teams (Chrome)`.
-4. When Teams launches in the browser, select the Add button in the dialog to install your app to Teams.
+ Step 4: Follow the steps by referring the documentation:
+https://github.com/OfficeDev/TeamsFx/wiki/How-to-configure-Message-Extension-capability-within-your-Teams-app
 
-**Congratulations**! You are running an application that can now show a basic web page in Teams, Outlook and the Microsoft 365 app.
-
-![Basic Tab](https://github.com/OfficeDev/TeamsFx/assets/11220663/ad7bd534-cdb2-4c18-a71b-b206b6387b4c)
-
-## What's included in the template
-
-| Folder       | Contents                                            |
-| - | - |
-| `.vscode`    | VSCode files for debugging                          |
-| `appPackage` | Templates for the Teams application manifest        |
-| `env`        | Environment files                                   |
-| `infra`      | Templates for provisioning Azure resources          |
-| `src`        | The source code for the Teams application |
-
-The following files can be customized and demonstrate an example implementation to get you started.
-
-| File                                 | Contents                                           |
-| - | - |
-|`src/static/scripts/teamsapp.js`|A script that calls `teamsjs` SDK to get the context of on which Microsoft 365 application your app is running.|
-|`src/static/styles/custom.css`|css file for the app.|
-|`src/static/views/hello.html`|html file for the app.|
-|`src/app.ts`|Starting a restify server.|
-
-The following are Teams Toolkit specific project files. You can [visit a complete guide on Github](https://github.com/OfficeDev/TeamsFx/wiki/Teams-Toolkit-Visual-Studio-Code-v5-Guide#overview) to understand how Teams Toolkit works.
-
-| File                                 | Contents                                           |
-| - | - |
-|`teamsapp.yml`|This is the main Teams Toolkit project file. The project file defines two primary things:  Properties and configuration Stage definitions.|
-|`teamsapp.local.yml`|This overrides `teamsapp.yml` with actions that enable local execution and debugging.|
-
-## Extend the Basic Tab template
-
-Following documentation will help you to extend the Basic Tab template.
-
-- [Add or manage the environment](https://learn.microsoft.com/microsoftteams/platform/toolkit/teamsfx-multi-env)
-- [Create multi-capability app](https://learn.microsoft.com/microsoftteams/platform/toolkit/add-capability)
-- [Add single sign on to your app](https://learn.microsoft.com/microsoftteams/platform/toolkit/add-single-sign-on)
-- [Access data in Microsoft Graph](https://learn.microsoft.com/microsoftteams/platform/toolkit/teamsfx-sdk#microsoft-graph-scenarios)
-- [Use an existing Microsoft Entra application](https://learn.microsoft.com/microsoftteams/platform/toolkit/use-existing-aad-app)
-- [Customize the Teams app manifest](https://learn.microsoft.com/microsoftteams/platform/toolkit/teamsfx-preview-and-customize-app-manifest)
-- Host your app in Azure by [provision cloud resources](https://learn.microsoft.com/microsoftteams/platform/toolkit/provision) and [deploy the code to cloud](https://learn.microsoft.com/microsoftteams/platform/toolkit/deploy)
-- [Collaborate on app development](https://learn.microsoft.com/microsoftteams/platform/toolkit/teamsfx-collaboration)
-- [Set up the CI/CD pipeline](https://learn.microsoft.com/microsoftteams/platform/toolkit/use-cicd-template)
-- [Publish the app to your organization or the Microsoft Teams app store](https://learn.microsoft.com/microsoftteams/platform/toolkit/publish)
-- [Enable the app for multi-tenant](https://github.com/OfficeDev/TeamsFx/wiki/Multi-tenancy-Support-for-Azure-AD-app)
-- [Preview the app on mobile clients](https://github.com/OfficeDev/TeamsFx/wiki/Run-and-debug-your-Teams-application-on-iOS-or-Android-client)
+Step 5: Take the sample project(https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-bot-with-tab) and compare config changes(step 4)
+(task.json or teamsapp.local.yml etc)
