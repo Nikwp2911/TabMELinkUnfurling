@@ -16,3 +16,5 @@ Step 2: Move all the component files / static files / config files to tab(create
  Step 4: Follow the steps by referring the documentation:
 https://github.com/OfficeDev/TeamsFx/wiki/How-to-configure-Message-Extension-capability-within-your-Teams-app
 
+Step 5: Take the sample project(https://github.com/OfficeDev/TeamsFx-Samples/tree/dev/hello-world-bot-with-tab) and compare config changes(step 4)
+(task.json or teamsapp.local.yml etc)
